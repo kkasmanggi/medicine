@@ -20,7 +20,7 @@ st.divider()
 # PENGATURAN API KEY DAN MODEL
 # ==============================================================================
 # Mengambil API Key dari Streamlit Secrets atau environment variable
-API_KEY = st.secrets["GEMINI_API_KEY"]
+API_KEY = st.secrets["AIzaSyBWzMBC6hVzvooktYrFkO5fvrDuJKVxqio"]
 MODEL_NAME = 'gemini-1.5-flash'
 
 # ==============================================================================
@@ -97,3 +97,4 @@ if prompt := st.chat_input("Tuliskan gejala yang Anda rasakan..."):
         except Exception as e:
             st.error(f"❌ Maaf, terjadi kesalahan saat berkomunikasi dengan DokterAI: {e}")
             st.warning("Silakan coba lagi. Pastikan API Key Anda valid.")
+
